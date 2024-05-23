@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vw;
+    background: rgb(240, 240, 240);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.9s ease;
+}
+
+.button {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: black;
+    border: none;
+    color: white;
+    font: bolder;
+    transition: background-color 0.9s ease;
+    transition: color 0.7s ease;
+}
+
+.button:hover { /** hover 속성은 마우스를 갖다 댔을 때의 이벤트 (모바일에선 안됨) **/
+    background-color: gray;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+    color: rgb(40, 40, 40);
+}
+
+.button:active { /** active 속성은 클릭 동안의 이벤트 **/
+    transform: translateY(5px); /** 현재 Y 값의 4px를 내려간다. 원상복구됨. **/
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+}
